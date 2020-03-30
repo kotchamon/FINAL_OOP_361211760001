@@ -16,12 +16,14 @@ public class PatientDAOImpl implements PatientDAO {
     public static final String DELETE_PT = "delete from patient where p_id = ?";
     public static final String FING_PT_BY_ID = "select * from patient where p_id = ?";
 
+
     //create class instant
     private static PatientDAOImpl instant = new PatientDAOImpl();
 
     public static PatientDAOImpl getInstance() {
         return instant;
     }
+
     //constructor
 
     public PatientDAOImpl() {
@@ -96,6 +98,7 @@ public class PatientDAOImpl implements PatientDAO {
         }
     }
 
+
     @Override
     public void updatePt(Patient patient) {
         try {
@@ -144,6 +147,8 @@ public class PatientDAOImpl implements PatientDAO {
             e.printStackTrace();
         }
     }
+
+
     @Override
     public Patient findpt(int id) {
         Patient PT = null;

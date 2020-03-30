@@ -7,6 +7,7 @@ public class Patient {
     private String p_address;
     private String p_blood_result;
 
+
     //to string
     @Override
     public String toString() {
@@ -19,6 +20,7 @@ public class Patient {
                 ", p_blood_result='" + p_blood_result + '\'' +
                 '}';
     }
+
 
     //getter and setter
     public int getP_id() {
@@ -68,6 +70,7 @@ public class Patient {
     public void setP_blood_result(String p_blood_result) {
         this.p_blood_result = p_blood_result;
     }
+
 
     //constructor
     public Patient(int p_id, String p_name, String p_gender, int p_age, String p_address, String p_blood_result) {
